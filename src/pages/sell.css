@@ -1,0 +1,63 @@
+.price-text {
+    font-weight: 600;
+    font-size: 16px;
+}
+.eth-select {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    padding: 12px;
+    color: rgb(112, 122, 131);
+    background-color: rgba(229, 232, 235, 0.25);
+    pointer-events: none;
+    width: 160px;
+}
+.arrow-down {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    width: 12px;
+    height: 12px;
+}
+.amount-input input {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    width: 100%;
+    padding: 12px
+}
+.amount-input:active {
+    border-color: rgb(112, 122, 131) !important;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px !important;
+}
+.service-fee {
+    color: #707a83;
+    font-size: 14px;
+}
+.btn-listing {
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 104, 183);
+    padding: 10px !important;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 150px !important;
+    border: none !important;
+}
+.btn-listing:hover {
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    transition: all 0.2s ease 0s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sell-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 122px);
+}

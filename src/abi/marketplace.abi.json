@@ -1,0 +1,96 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "name": "_quoteToken",
+        "type": "address"
+      },
+      {
+        "name": "_price",
+        "type": "uint256"
+      }
+    ],
+    "name": "createOrderForSale",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_orderId",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyForOrder",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "name": "OrderForSale",
+    "inputs": [
+      {
+        "name": "_seller",
+        "type": "address"
+      },
+      {
+        "name": "_orderId",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "_tokenId",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "_quoteToken",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "_price",
+        "type": "uint256"
+      }
+    ],
+    "type": "event"
+  },
+  {
+    "name": "OrderFilled",
+    "inputs": [
+      {
+        "name": "_seller",
+        "type": "address"
+      },
+      {
+        "name": "_buyer",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "_orderId",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "_quoteToken",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "_price",
+        "type": "uint256"
+      }
+    ],
+    "type": "event"
+  }
+]

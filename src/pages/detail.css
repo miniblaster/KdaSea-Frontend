@@ -1,0 +1,45 @@
+.detail-container {
+    min-height: calc(100vh - 77px - 46px);
+}
+
+.btn-favorite {
+    color: #707a83;
+}
+.btn-favorite:hover {
+    color: black;
+    transition: all 0.4s;
+}
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: transparent !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+.float-right {
+    float: right;
+}
+.btn-buy-now {
+    background-color: #2081e2;
+    box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+.btn-buy-now:hover {
+    background-color: rgb(24, 104, 183);
+    transition: all 0.4s;
+}
+.current-price-div {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.125);
+}

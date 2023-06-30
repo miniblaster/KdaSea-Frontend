@@ -1,0 +1,84 @@
+{
+  "name": "rightsmint.com",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@ethersproject/bignumber": "^5.6.0",
+    "@ethersproject/contracts": "^5.6.0",
+    "@ethersproject/providers": "^5.6.2",
+    "@ethersproject/units": "^5.6.0",
+    "@iconify/icons-ant-design": "^1.1.0",
+    "@iconify/icons-eva": "^1.1.0",
+    "@iconify/icons-ic": "^1.1.10",
+    "@iconify/react": "^3.0.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/core": "^5.0.0-alpha.54",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.68",
+    "@mui/material": "^5.5.3",
+    "@mui/styled-engine": "^5.5.2",
+    "@mui/system": "^5.5.3",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "axios": "^0.26.1",
+    "bignumber.js": "^9.0.2",
+    "classnames": "^2.3.1",
+    "ethers": "^5.6.2",
+    "form-data": "^4.0.0",
+    "lottie-react": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dropdown-select": "^4.7.4",
+    "react-dropzone": "^12.0.4",
+    "react-hot-toast": "^2.2.0",
+    "react-loading-skeleton": "^3.0.3",
+    "react-redux": "^7.2.8",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "react-slick": "^0.29.0",
+    "react-spinners": "^0.11.0",
+    "recharts": "^2.1.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.49.11",
+    "sass-loader": "^12.6.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5",
+    "sweetalert2": "^11.4.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

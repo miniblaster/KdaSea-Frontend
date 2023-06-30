@@ -1,0 +1,101 @@
+.header-container {
+  height: 10vh;
+  background-color: aquamarine;
+}
+
+.nft-item {
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item-text-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.item-text-type {
+  font-size: 12px;
+}
+
+.item-text-price {
+  font-size: 15px;
+}
+
+.item-text-like {
+  font-size: 18px;
+}
+
+.item-text-buy {
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(32, 129, 226);
+  cursor: pointer;
+}
+
+.text-button-connect {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.img-crypto {
+  height: 14px;
+  width: 14px;
+}
+
+.img-like {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.footer-container {
+  background-color: rgb(24, 104, 183);
+  font-size: 20px;
+}
+
+.button-container {
+  height: 24px;
+}
+
+.button-address {
+  cursor: pointer;
+}
+
+.main-container {
+  min-height: calc(100vh - 122px);
+}
+
+.btn-login:hover {
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+.dark {
+  background-color: #282828;
+}
+
+
+
+/* Opensea css */
+
+.header {
+  --transition-curve: cubic-bezier(0.05, 0, 0.2, 1);
+  box-shadow: rgba(229, 232, 235, 0) 0px 1px 0px 0px;
+  max-width: 100vw;
+  height: 72px;
+  top: 0px;
+  position: sticky;
+  z-index: 150;
+  transition: top 0.5s var(--transition-curve),
+              background-color 0.2s var(--transition-curve),
+              box-shadow 0.2s var(--transition-curve),
+              color 0.2s var(--transition-curve);
+  background-color: transparent;
+}
+
+.searchInput:focus {
+  border: none;
+  outline: none;
+}

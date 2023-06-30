@@ -1,0 +1,90 @@
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 232, 235);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+.profile-item:hover {
+    transform: translateY(-2px);
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    transition: all 0.1s ease 0s;
+}
+.profile-item img {
+    width: 100%;
+}
+.profile-item .title-div {
+    padding: 12px;
+}
+.profile-item .collection-title {
+    color: #707a83;
+    font-size: 12px;
+}
+
+.profile-item .item-title {
+    color: rgb(53, 56, 64);
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    text-align: left;
+}
+.profile-item .bottom-div {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    padding: 12px;
+    height: 42px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(rgba(229, 232, 235, 0.392) 0%, rgb(255, 255, 255) 20%);
+}
+.profile-item .icon-favorite:hover {
+    color: rgb(235, 87, 87);
+    transition: all 0.1s ease 0s;
+}
+.icon-favorite-select {
+    color: rgb(235, 87, 87);
+}
+.profile-item .dropdown-menu {
+    max-width: 350px;
+    transition-duration: 300ms;
+    overflow-y: auto;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(4, 17, 29);
+    max-width: initial;
+    min-width: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0 !important;
+}
+.dropdown-menu ul {
+    padding-left: 0 !important;
+    margin: 0;
+}
+.dropdown-menu li {
+    border-bottom: 1px solid rgb(229, 232, 235);
+    text-decoration: none;
+    list-style-type: none;
+}
+.dropdown-menu li:hover {
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    background-color: rgb(251, 253, 255);
+}
+.dropdown-menu li span {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(4, 17, 29);
+}
+.sell-caption:hover {
+    color: rgba(4, 17, 29, 0.7);
+    transition: all 0.1s ease 0s;
+}
+
+.preview-item {
+    width: 280px;
+}

@@ -1,0 +1,27 @@
+.profile-container {
+    min-height: calc(100vh - 153px);
+    margin-top: 30px;
+}
+.profile-container .nav-btn {
+    padding: 20px;
+    color: #353840;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-btn.active {
+    border-bottom: 4px solid rgb(32, 129, 226);
+}
+.btn-create {
+    padding: 0 24px !important;
+    border-radius: 12px;
+}
+.btn-create:hover {
+    transition: all 0.1s ease 0s;
+    opacity: 0.7;
+}
+
+.item-container {
+    overflow: hidden;
+}
