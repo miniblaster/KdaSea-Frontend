@@ -5,6 +5,7 @@ import {
     Card, 
     Divider, 
     CardHeader, 
+    Grid,
     Stack, 
     Box, 
     Table, 
@@ -18,7 +19,7 @@ import {
 import arrowIosForwardFill from '@iconify/icons-eva/arrow-ios-forward-fill';
 import { Icon } from '@iconify/react';
 
-const TopNFTsData = [
+const TopNFTsFirstData = [
     {
         avatar: 'https://i.seadn.io/gcs/files/d2625a77b485bad7b6fffcd65af3c461.png?auto=format&dpr=1&h=500',
         collectionName: 'BoringPunks',
@@ -48,60 +49,120 @@ const TopNFTsData = [
     },
 ]
 
+const TopNFTsSecondData = [
+    {
+        avatar: 'https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256',
+        collectionName: 'BEANZ Official',
+        floorPrice: '0.84',
+        volumn: '17.2'
+    },
+    {
+        avatar: 'https://i.seadn.io/gcs/files/ddb7e76485b7a78c6911d02c7e5040e2.jpg?auto=format&dpr=1&w=256',
+        collectionName: 'The Band Bears',
+        floorPrice: '0.41',
+        volumn: '13.7'
+    },{
+        avatar: 'https://i.seadn.io/gcs/files/129b97582f0071212ee7cf440644fc28.gif?auto=format&dpr=1&w=256',
+        collectionName: 'The Potatoz',
+        floorPrice: '1.75',
+        volumn: '11.2'
+    },{
+        avatar: 'https://i.seadn.io/gcs/files/82a7f92df6d60e41327b69cdafea8831.jpg?auto=format&dpr=1&w=256',
+        collectionName: 'HV-MTL',
+        floorPrice: '1.43',
+        volumn: '9.7'
+    },{
+        avatar: 'https://i.seadn.io/gcs/files/bbaf43ee4a02d5affb7e8fc186d0bdb5.png?auto=format&dpr=1&w=256',
+        collectionName: 'Azuki Elementals',
+        floorPrice: '0.45',
+        volumn: '8.4'
+    },
+]
+
 export default function Top() {
     return (
         <>
-            <Card>
-                <TableContainer sx={{ minWidth: 720 }}>
-                    <Table>
-                        <TableHead>
-                            <TableRow sx={{ backgroundColor: '#f4f6f8' }} >
-                                <TableCell sx={{ minWidth: 100, fontWeight: 700, fontSize: 18 }}>Rank</TableCell>
-                                <TableCell sx={{ minWidth: 300, fontWeight: 700, fontSize: 18 }}>Collection</TableCell>
-                                <TableCell sx={{ minWidth: 160, fontWeight: 700, fontSize: 18 }}>Floor Price</TableCell>
-                                <TableCell sx={{ minWidth: 160, fontWeight: 700, fontSize: 18 }}>Volumn</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {TopNFTsData.map((row, index) => (
-                                <TableRow key={row.id}>
-                                    <TableCell>
-                                        <Typography sx={{ fontWeight: 700 }} >{index+1}</Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Stack direction="row" alignItems="center" spacing={2}>
-                                            <Avatar alt={row.collectionName} src={row.avatar} />
-                                            <Typography variant='subtitle2' sx={{ fontWeight: 600 }} >{row.collectionName}</Typography>
-                                        </Stack>
-                                    </TableCell>
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={6}>
+                    <Card>
+                        <TableContainer sx={{ minWidth: 720 }}>
+                            <Table>
+                                <TableHead>
+                                    <TableRow sx={{ backgroundColor: '#f4f6f8' }} >
+                                        <TableCell sx={{ minWidth: 100, fontWeight: 700, fontSize: 18 }}>Rank</TableCell>
+                                        <TableCell sx={{ minWidth: 300, fontWeight: 700, fontSize: 18 }}>Collection</TableCell>
+                                        <TableCell sx={{ minWidth: 160, fontWeight: 700, fontSize: 18 }}>Floor Price</TableCell>
+                                        <TableCell sx={{ minWidth: 160, fontWeight: 700, fontSize: 18 }}>Volumn</TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {TopNFTsFirstData.map((row, index) => (
+                                        <TableRow key={row.id}>
+                                            <TableCell>
+                                                <Typography sx={{ fontWeight: 700 }} >{index+1}</Typography>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Stack direction="row" alignItems="center" spacing={2}>
+                                                    <Avatar alt={row.collectionName} src={row.avatar} />
+                                                    <Typography variant='subtitle2' sx={{ fontWeight: 600 }} >{row.collectionName}</Typography>
+                                                </Stack>
+                                            </TableCell>
 
-                                    <TableCell>
-                                        <Typography sx={{ fontWeight: 700 }} >{row.floorPrice} ETH</Typography>
-                                    </TableCell>
+                                            <TableCell>
+                                                <Typography sx={{ fontWeight: 700 }} >{row.floorPrice} ETH</Typography>
+                                            </TableCell>
 
-                                    <TableCell>
-                                        <Typography sx={{ fontWeight: 700 }} >{row.volumn} ETH</Typography>
-                                    </TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
+                                            <TableCell>
+                                                <Typography sx={{ fontWeight: 700 }} >{row.volumn} ETH</Typography>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Card>
+                        <TableContainer sx={{ minWidth: 720 }}>
+                            <Table>
+                                <TableHead>
+                                    <TableRow sx={{ backgroundColor: '#f4f6f8' }} >
+                                        <TableCell sx={{ minWidth: 100, fontWeight: 700, fontSize: 18 }}>Rank</TableCell>
+                                        <TableCell sx={{ minWidth: 300, fontWeight: 700, fontSize: 18 }}>Collection</TableCell>
+                                        <TableCell sx={{ minWidth: 160, fontWeight: 700, fontSize: 18 }}>Floor Price</TableCell>
+                                        <TableCell sx={{ minWidth: 160, fontWeight: 700, fontSize: 18 }}>Volumn</TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {TopNFTsSecondData.map((row, index) => (
+                                        <TableRow key={row.id}>
+                                            <TableCell>
+                                                <Typography sx={{ fontWeight: 700 }} >{index+6}</Typography>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Stack direction="row" alignItems="center" spacing={2}>
+                                                    <Avatar alt={row.collectionName} src={row.avatar} />
+                                                    <Typography variant='subtitle2' sx={{ fontWeight: 600 }} >{row.collectionName}</Typography>
+                                                </Stack>
+                                            </TableCell>
 
-                <Divider />
+                                            <TableCell>
+                                                <Typography sx={{ fontWeight: 700 }} >{row.floorPrice} ETH</Typography>
+                                            </TableCell>
 
-                <Box sx={{ p: 2, textAlign: 'right' }}>
-                <Button
-                    to="#"
-                    size="small"
-                    color="inherit"
-                    endIcon={<Icon icon={arrowIosForwardFill} />}
-                    sx={{ fontSize: 14, fontWeight: 700 }}
-                >
-                    View All
-                </Button>
-                </Box>
-            </Card>
+                                            <TableCell>
+                                                <Typography sx={{ fontWeight: 700 }} >{row.volumn} ETH</Typography>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Card>
+                </Grid>
+            </Grid>
+            
         </>
     )
 }
