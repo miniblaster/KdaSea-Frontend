@@ -163,7 +163,8 @@ const Header = (props) => {
           id='toolbar-menu'
           width={'100%'}
           py={1}
-          px={'2rem'}
+          pl={'2rem'}
+          pr={'3.5rem'}
           direction={'row'}
           position={'fixed'}
           alignItems={'center'}
@@ -198,9 +199,9 @@ const Header = (props) => {
             <Button
               color='inherit'
               sx={{
-                mx: '25px',
+                mx: '15px',
                 fontWeight: 700,
-                fontSize: 18,
+                fontSize: 16,
                 textTransform: 'initial',
               }}
             >
@@ -209,9 +210,9 @@ const Header = (props) => {
             <Button
               color='inherit'
               sx={{
-                mr: '25px',
+                mr: '20px',
                 fontWeight: 700,
-                fontSize: 18,
+                fontSize: 16,
                 textTransform: 'initial',
               }}
             >
@@ -223,12 +224,13 @@ const Header = (props) => {
             direction={'row'}
             sx={{
               pr: '0.5rem',
-              mr: '0.5rem',
+              p: 0.5,
+              mr: '0.75rem',
               display: 'flex',
               flex: 1,
               alignItems: 'center',
               border: 'none',
-              borderRadius: '0.5rem',
+              borderRadius: '0.75rem',
               backgroundColor: 'rgb(255, 255, 255, 0.2)',
             }}
           >
@@ -246,7 +248,7 @@ const Header = (props) => {
               variant='contained'
               sx={{
                 minWidth: '1rem',
-                p: '0rem 0.6rem',
+                p: '0.05rem 0.65rem',
                 borderRadius: '0.5rem',
                 color: 'white !important',
               }}
@@ -263,8 +265,9 @@ const Header = (props) => {
             onClick={connectwallet}
             sx={{
               mr: '-1px',
-              minWidth: '175px',
-              borderRadius: '8px 0px 0px 8px',
+              p: 1.5,
+              minWidth: '190px',
+              borderRadius: '0.75rem 0px 0px 0.75rem',
               border: 'none',
               backgroundColor: 'rgb(255, 255, 255, 0.2)',
             }}
@@ -286,7 +289,9 @@ const Header = (props) => {
             color='inherit'
             sx={{
               ml: '0px',
-              borderRadius: '0px 8px 8px 0px',
+              p: 1.5,
+              minWidth: 2.5,
+              borderRadius: '0px 0.75rem 0.75rem 0px',
               border: 'none',
               backgroundColor: 'rgb(255, 255, 255, 0.2)',
             }}
@@ -297,7 +302,7 @@ const Header = (props) => {
             id='btn-cart'
             variant='outlined'
             color='inherit'
-            sx={{ ml: '8px', border: 'none', backgroundColor: 'rgb(255, 255, 255, 0.2)' }}
+            sx={{ ml: 1, p: 1.5, minWidth: '45px', border: 'none', borderRadius: '0.75rem', backgroundColor: 'rgb(255, 255, 255, 0.2)' }}
             onClick={handleCart}
           >
             <ShoppingCartOutlinedIcon />

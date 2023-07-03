@@ -10,7 +10,7 @@ function AfterLoginFooter(props) {
     <Container>
       <div className="footer">
         <div className="social">
-          <p className="title">KDASEA</p>
+          <p className="title">KdaSea</p>
           <p className="social_info">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor

@@ -30,7 +30,7 @@ function StoreFrontPage(props) {
       <Box style={{background: 'linear-gradient(#000, #fff'}}>
         <Container maxWidth={'90%'}>
           <Box sx={{ pt: '100px', fontSize: '16px' }}>
-            <Stack direction={'row'} gap={2}>
+            <Stack direction={'row'} gap={2} ml={2}>
               <Button
                 variant='text'
                 sx={{
@@ -125,7 +125,7 @@ function StoreFrontPage(props) {
                 backgroundRepeat: 'no-repeat',
                 boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)',
                 height: '70vh',
-                mt: '20px',
+                m: 2,
                 borderRadius: '20px',
                 display: 'flex',
                 justifyContent: 'flex-end',
@@ -169,7 +169,7 @@ function StoreFrontPage(props) {
           <Box sx={{ mt: '20px' }}>
             <TabContext value={currentTab}>
               <Box>
-                <TabList onChange={(e, newValue) => handleCurrentTab(newValue)}>
+                <TabList onChange={(e, newValue) => handleCurrentTab(newValue)} sx={{ml: 2}}>
                   <Tab label='Trending' value='trending' />
                   <Tab label='Top' value='top' />
                 </TabList>
@@ -183,7 +183,7 @@ function StoreFrontPage(props) {
             </TabContext>
           </Box>
           <Box>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Notable Collections
             </Typography>
             <Box>
@@ -191,7 +191,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Top Collector Buys Today
             </Typography>
             <Box>
@@ -199,7 +199,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               LGBTQIA + Pride Month Creator Spotlight
             </Typography>
             <Box>
@@ -207,7 +207,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Trending in Art
             </Typography>
             <Box>
@@ -215,7 +215,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Trending in Gaming
             </Typography>
             <Box>
@@ -223,7 +223,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Trending in Memberships
             </Typography>
             <Box>
@@ -231,7 +231,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Trending in Music
             </Typography>
             <Box>
@@ -239,7 +239,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Trending in PFPs
             </Typography>
             <Box>
@@ -247,7 +247,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Trending in Photography
             </Typography>
             <Box>
@@ -255,7 +255,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ mt: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               NFT 101
             </Typography>
             <Box>
@@ -263,7 +263,7 @@ function StoreFrontPage(props) {
             </Box>
           </Box>
           <Box sx={{ my: '30px' }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20, my: 2 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 20, m: 2 }}>
               Explore Categories
             </Typography>
             <Box>
