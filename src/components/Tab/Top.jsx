@@ -79,7 +79,7 @@ const TopNFTsSecondData = [
     },
 ]
 
-export default function Top() {
+export default const Top = () => {
     return (
         <>
             <Grid container spacing={2}>
