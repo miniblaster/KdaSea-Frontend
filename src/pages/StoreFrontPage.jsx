@@ -168,8 +168,8 @@ function StoreFrontPage(props) {
         <Container maxWidth={'90%'}>
           <Box sx={{ mt: '20px' }}>
             <TabContext value={currentTab}>
-              <Box>
-                <TabList onChange={(e, newValue) => handleCurrentTab(newValue)}>
+              <Box sx={{ width: '200px' }} >
+                <TabList onChange={(e, newValue) => handleCurrentTab(newValue)} sx={{ backgroundColor: '#f6f6f6', borderRadius: 2, width: '100%' }}>
                   <Tab label='Trending' value='trending' />
                   <Tab label='Top' value='top' />
                 </TabList>
